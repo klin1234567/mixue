@@ -1,0 +1,124 @@
+/* Table and Moblie */
+@media (max-width: 1023px) {
+    .hide-moblie-tablet {
+        display: none;
+    }
+    .presently-moblie-tablet {
+        display: block;
+    }
+    .form__container .input {
+        border: 1px solid var(--red-color);
+    }
+    .form__container .input:hover {
+        border: 1px solid var(--red-color);
+        box-shadow: 3px 3px 10px #e30558, -1px -1px 6px rgba(255, 255, 255, 0.4), inset 3px 3px 10px #e30558, inset -1px -1px 6px rgba(255, 255, 255, 0.4);
+    }
+    .cart-moblie-tablet {
+        position: absolute;
+        z-index: 1; 
+        top: 25%;
+        width: 100%;
+}
+    .modal-content {
+        margin: 0 5%;
+        width: 90%;
+        margin: 0;
+    }
+    .cart-header,.cart-total-title,.btn-secondary,.btn-primary,.cart-item-title,.cart-column,.btn-danger,.editing-view-port >div     {
+        font-size: 1.2rem;
+    }
+    .btn-danger {
+        padding: 15px;
+    }
+}
+/* Tablet  */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-tablet {
+        display: none;
+    }
+    .presently-tablet {
+        display: block;
+    }
+    .nav-menu{
+        width: 50%;   
+    }
+    .slider__container-des {
+        width: 100%;
+        font-size: 2rem;
+        line-height: 2rem;
+        width: 70%;
+        position: absolute;
+        top: 156px;
+        left: -67px;
+    }
+    .slider__container-content h1 {
+        color: #E88735;
+        font-size: 4rem;
+        line-height: 4rem;
+        max-width: 50%;
+        position: absolute;
+        left: -63px;
+    }
+    .modal-content {
+        width: 80%;
+    }
+    .nav__moblie-list {
+        width: 50%;
+    }
+    .header_close {
+        top: 4%;
+        right: 13%;
+    }
+
+}
+/* Moblie */
+@media (max-width: 739px){
+    .hide-moblie {
+        display: none;
+    }
+    .presently-moblie {
+        display: block;
+    }
+    .nav-menu{
+     width: 100%;   
+    }
+    .slider__container-des  {
+        font-size: 1.4rem;
+        width: 70%;
+        position: absolute;
+        top: 100px;
+        left: -106px;
+    }
+    .slider__container-content h1 {
+        font-size: 3rem;
+        position: absolute;
+        top: 11px;
+        left: -38px;
+    }
+    .toast {
+        top: 12px;
+        left: 60px;
+    }
+    .nav__moblie-list {
+        width: 100%;
+    }
+    .wrapper {
+        width: 100%;
+    }
+    .new__item-img {
+        width: 100%;
+        margin-left: 0;
+    }
+    .new__item {
+        display: flex;
+        flex-direction: column;
+    } 
+    .new__item-wrap {
+        margin-left: 0;
+        padding: 5px;
+    }  
+    .information__container {
+        padding: 5px;
+    }
+    
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quên mật khẩu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <link rel="stylesheet" href="./src/css/base.css">
+    <link rel="stylesheet" href="./src/css/grid.css">
+    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="./src/css/nhapky/nhapky.css">
+    <link rel="stylesheet" href="./src/css/home/toast.css">
+    <link rel="stylesheet" href="./src/css/cart_product/cart_product.css">
+    <link rel="stylesheet" href="./src/css/reponsive.css">
+    <link rel="icon" href="./src/img/home/icon.png">
+</head>
+<body>
+     <!-- Loading -->
+     <div id="preloader">
+        <div id="status">&nbsp;</div>
+        </div>
+    <div class="app">
+       <!-- Header -->
+       <nav>
+        <div class="grid wide header">
+            <a href="./index.html">
+                <img src="./src/img/home/logo.png" alt="" class="header__logo">
+            </a>
+            <div class="header__list hide-moblie-tablet">
+                <a class="header__item cta" href="./index.html"><span class="hover-underline-animation">Home</span></a>
+                <a class="header__item cta" href="./product.html"><span class="hover-underline-animation">Sản phẩm</span></a>
+                <a class="header__item cta" href="./tintuc.html"><span class="hover-underline-animation">Tin tức</span></a>
+                <a class="header__item cta" href="./sukien.html"><span class="hover-underline-animation">Sự kiện</span></a>
+                <a class="header__item cta" href="./thongtin.html"><span class="hover-underline-animation">Thông tin</span></a>
+                <a class="header__item cta" href="./lienhe.html"><span class="hover-underline-animation"> Liên hệ</span></a>
+                <a class="header__item cta" href="./dangnhap.html"><span class="hover-underline-animation">Đăng nhập</span></a>
+                <a class="header__item cta" href="./dangki.html"><span class="hover-underline-animation">Đăng ký</span></a>
+             </div>
+              <!-- The Modal -->
+        <button id="cart" class="hide-moblie-tablet">
+            <span class="hover-underline-animation"> <i class="fa-solid fa-cart-shopping"></i></span>
+        </button>
+        <div id="myModal" class="modal hide-moblie hide-element">
+            <div class="modal-content hide-moblie">
+                <div class="modal-header">
+                    <h5 class="modal-title">Giỏ Hàng</h5>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body">
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                            <span class="cart-price cart-header cart-column">Giá</span>
+                            <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                        </div>
+                        <!-- DANH SÁCH SẢN PHẨM TRONG CART -->
+                        <div class="cart-items">
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Tổng Cộng:</strong>
+                            <span class="cart-total-price">0VNĐ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                    <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+          <!-- Header Moblie -->
+          <input type="checkbox" name="" id="header-input" class="header-input">
+          <label for="header-input" class="modal"></label>
+          <label for="header-input" class="header_close presently-moblie-tablet">
+              <i class="fa-solid fa-list"></i>
+          </label >
+              <ul class="nav__moblie-list">
+                <a class="nav__item-moblie" href="./index.html"><span class="nav__item-moblie-link">Home</span></a>
+                <a class="nav__item-moblie" href="./product.html"><span class="nav__item-moblie-link">Sản phẩm</span></a>
+                <a class="nav__item-moblie" href="./tintuc.html"><span class="nav__item-moblie-link">Tin tức</span></a>
+                <a class="nav__item-moblie" href="./sukien.html"><span class="nav__item-moblie-link">Sự kiện</span></a>
+                <a class="nav__item-moblie" href="./thongtin.html"><span class="nav__item-moblie-link">Thông tin</span></a>
+                <a class="nav__item-moblie" href="./lienhe.html"><span class="nav__item-moblie-link"> Liên hệ</span></a>
+                <a class="nav__item-moblie" href="./dangnhap.html"><span class="nav__item-moblie-link">Đăng nhập</span></a>
+                <a class="nav__item-moblie" href="./dangki.html"><span class="nav__item-moblie-link">Đăng ký</span></a>
+                      <label for="header-input" class="nav__moblie-item-close">
+                          <i class="fa-solid fa-xmark nav__moblie-item-icon"></i>
+                      </label>
+              </ul>
+    </nav>
+        <div class="wrapper">
+            <h1>QUÊN MẬT KHẨU</h1>
+            <form class="form__container" action="#">
+                <input class="input" type="text">
+                <label class="label">Gmail</label>
+            </form>
+            <form class="form__container">
+                <input class="input" type="password">
+                <label class="label">Mật khẩu mới</label>
+            </form>
+            <form class="form__container">
+                <input class="input" type="password">
+                <label class="label">Nhập lại mật khẩu mới</label>
+            </form>
+            <button id="notpass" class="btn">HOÀN THÀNH</button>
+            <div class="member">
+                <div class="recover">
+                    <a href="./dangnhap.html">Đăng nhập?</a>
+                </div>
+                <span class="member__span">
+                    Bạn chưa có tài khoản? <a href="./dangki.html">Đăng kí tại đây</a>
+                </span>
+                
+                <div class="member1">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <a href="./index.html">Quay lại trang chủ</a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="notifications"></div>
+        <footer>
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-4 m-4 c-12">
+                        <ul class="footer_list">
+                            <li class="li-active">Địa chỉ</li>
+                            <li>
+                                <i class="footer-icon fa-solid fa-location-dot"></i>41 Vũ Tông Phan , Hanoi, Vietnam</li>
+                            <li><i class="footer-icon fa-solid fa-location-dot"></i>159 Giảng Võ, quận Ba Đình, Hanoi, Vietnam</li>
+                            <li><i class="footer-icon fa-solid fa-location-dot"></i>Phố Chùa Thông 263, Hà Nội, Việt Nam, Son Tay, Vietnam</li>
+                            <li><i class="footer-icon fa-regular fa-envelope"></i>mxbc.mixuevietnam@gmail.com</li>
+                            <li><i class="footer-icon fa-solid fa-phone"></i></i>
+                                094 932 66 63
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col col l-4 m-4 c-12">
+                        <ul class="footer_list">
+                                <li class="li-active">Đường dây nóng nhượng quyền thương mại chính thức</li>
+                            <li>400-060-8888</li>
+                            <li>Thứ Hai đến Chủ nhật (trừ ngày lễ)</li>
+                            <li>Mùa hè:8:30-11:50 13:50-18:00</li>
+                            <li>Mùa đông:8:30-11:50 13:20-17:30</li>
+                        </ul>
+                    </div>
+                    <div class="col col l-4 m-4 c-12">
+                        <ul class="footer_list">
+                            <li class="li-active">Công ty</li>
+                            <li>Home</li>
+                            <li>Sản phẩm</li>
+                            <li>Tin tức</li>
+                            <li>Sự kiện</li>
+                            <li>Thông tin</li>
+                            <li>Liên hệ</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__wrap">
+                    <p class="footer-p1">2022 Mixue Corporation. All Right Reserved</p>
+                    <p class="footer-p2" >Follow us at <i class="footer-icon fa-brands fa-facebook"></i><i class="footer-icon fa-brands fa-instagram"></i><i class="footer-icon fa-brands fa-youtube"></i></p>
+                </div>
+            </div>
+            <div title="Về đầu trang" id="top-up">
+                <i class="fas fa-arrow-circle-up"></i></div>
+        </footer>
+    </div>
+    <script src="./src/js/home/Scroll_top.js"></script>
+    <script src="./src/js/home/toast.js"></script>
+</body>
+</html>
